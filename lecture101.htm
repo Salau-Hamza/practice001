@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+   @media (min-width: 600px){
+       h1::before{
+           content: "Welcome to My Web Page";
+       }
+   }
+   @media(max-width: 599px){
+       h1::before{
+           content: "Welcome!";
+       }
+   }
+   .container{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .container > div {
+       background-color: coral;
+       font-size: 25px;
+       margin: 20px;
+       padding: 20px;
+       width: 100px;
+   }
     </style>
 </head>
 <body>
-        <div class="container">
-            <div class="row">
-              <div class="col">col</div>
-              <div class="col">col</div>
-              <div class="w-100"></div>
-              <div class="col">col</div>
-              <div class="col">col</div>
-            </div>
-        </div>
+      <h1></h1>  
+    <div class="container">
+        <div>haghjgshj ajhghsjg ghajhgshg haghjgshj</div>
+        <div>jagh hkagh hahjghj jsgahj jahghjshj</div>
+        <div>jghagf jgag gafghs hgafutw qtywuya</div>
+        <div>jgafghs ytqrtwi tyyautzbnx xnvma</div>
+    </div>
 </body>
 </html>
