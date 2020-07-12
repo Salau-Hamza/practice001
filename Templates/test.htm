@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#color-change').onfullscreenchange = function () {
+                document.querySelector('#hello').style.color = this.value;
+            };
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">HELLO</h1>
+    <select id="color-change">
+        <option value="black"> Black</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+    </select>
+</body>
+</html>
